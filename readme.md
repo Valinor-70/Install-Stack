@@ -1,6 +1,6 @@
 # 🚀 Install-Stack
 
-> **Made this script for Oracle Cloud users — deleting accounts too often was a pain!** 😢  
+> **Made this script for Oracle Cloud users — their deleting accounts for no was a pain to setup again!** 😢  
 > **Remember:** You might want to run commands as root:  
 > ```bash
 > sudo su
