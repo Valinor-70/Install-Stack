@@ -35,6 +35,7 @@ Automated installer script for setting up:
 1. Download and run the installer script:
 
    ```bash
+   sudo su
    curl -fsSL https://github.com/Valinor-70/Install-Stack/raw/refs/heads/main/Install-Stack.sh -o Install-Stack.sh
    chmod +x Install-Stack.sh
    ./Install-Stack.sh
