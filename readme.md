@@ -1,41 +1,52 @@
-# Install-Stack
+# 🚀 Install-Stack
 
-Automated installer script for setting up:
-
-- **Webinoly** (Nginx + WordPress)
-- **Crafty Control** (game server manager)
-- **Daily backups** of WordPress and Crafty to **OneDrive** using `rclone`
-
----
-
-## Features
-
-- Installs all dependencies required for the stack
-- Sets up WordPress on your chosen domain via Webinoly
-- Installs Crafty Control from the official installer repo
-- Configures `rclone` for OneDrive backup synchronization
-- Creates a backup script that archives your website files, WordPress database, and Crafty data daily
-- Adds a cron job for automatic daily backups at 2 AM
-- Automatically cleans up backups older than 7 days
+> **Made this script for Oracle Cloud users — deleting accounts too often was a pain!** 😢  
+> **Remember:** You might want to run commands as root:  
+> ```bash
+> sudo su
+> ```
 
 ---
 
-## Requirements
+## 🎯 What is this?
 
-- Ubuntu 20.04+ (ARM64 or x86_64)
-- Root or sudo privileges
-- A valid domain name pointing to your server (for WordPress)
-- Internet connection
-- OneDrive account for backups
+Automated installer script to set up:
+
+- 🕸️ **Webinoly** (Nginx + WordPress)  
+- 🎮 **Crafty Control** (game server manager)  
+- ☁️ **Daily backups** of WordPress + Crafty to **OneDrive** using `rclone`
 
 ---
 
-## Usage
+## 🌟 Features
 
-1. Download and run the installer script:
+- ✅ Installs all dependencies for the full stack  
+- ✅ Sets up WordPress on your domain with Webinoly  
+- ✅ Installs Crafty Control from official sources  
+- ✅ Configures `rclone` for OneDrive backups  
+- ✅ Creates daily backup script for website files, DB, and Crafty data  
+- ✅ Schedules cron job to run backups daily at 2 AM  
+- ✅ Cleans up backups older than 7 days automatically
+
+---
+
+## 📋 Requirements
+
+| Requirement         | Details                           |
+|---------------------|---------------------------------|
+| OS                  | Ubuntu 20.04+ (ARM64 or x86_64) |
+| Privileges          | Root or sudo                    |
+| Domain              | Valid domain pointing to server |
+| Internet Connection | Required                        |
+| OneDrive Account    | For backups                    |
+
+---
+
+## ⚙️ Usage
+
+1. **Download & run the installer script:**
 
    ```bash
-   sudo su
    curl -fsSL https://github.com/Valinor-70/Install-Stack/raw/refs/heads/main/Install-Stack.sh -o Install-Stack.sh
    chmod +x Install-Stack.sh
    ./Install-Stack.sh
